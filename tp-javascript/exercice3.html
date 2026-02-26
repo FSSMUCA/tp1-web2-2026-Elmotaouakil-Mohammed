@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>TP JavaScript</title>
+</head>
+
+<body>
+    <h1>Exercice 3</h1>
+    <!-- Votre contenu HTML ici -->
+
+    <script>
+        // Votre code JavaScript ici
+        const TAUX_TVA = 0.20;
+        let prixHT = 140;
+        let prixTTC = prixHT + (TAUX_TVA * prixHT);
+
+        console.log(`Prix HT : ${prixHT} € | TVA (20%) : ${prixTTC - prixHT} € | Prix TTC : ${prixTTC} €`);
+        TAUX_TVA = 0.25;
+        console.log(`Prix TTC : ${prixTTC} €`); // si on change la valeur d'une variable constante, le console affiche une erreur "Assignment to constant variable" parce que c'est pas possible de changer la valeur d'une variable constante.
+
+    </script>
+</body>
+
+</html>
